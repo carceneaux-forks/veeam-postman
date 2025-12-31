@@ -7,10 +7,10 @@ pm.test("Access Token is present", function () {
 //updating global variable with token
 pm.test("Global Variable has been updated", function () {
     var jsonData = pm.response.json();
-    pm.globals.set("spc_access_token", jsonData.access_token);
+    pm.globals.set("vspc_access_token", jsonData.access_token);
 });
 //updating global variable with refresh token
 pm.test("Global Variable has been updated", function () {
     var jsonData = pm.response.json();
-    pm.globals.set("spc_refresh_token", jsonData.refresh_token);
+    pm.globals.set("vspc_refresh_token", jsonData.refresh_token);
 });
